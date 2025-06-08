@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
-from time import *
+import time
 
 window=Tk()
 window.geometry("400x400")
