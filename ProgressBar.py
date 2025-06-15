@@ -26,7 +26,13 @@ button.pack(padx=10,pady=10)
 progress.pack(padx=10,pady=50)
 
 
+progress1=Progressbar(window,orient="horizontal",length=100,mode="indeterminate")
+progress1.pack(padx=10,pady=80)
+def progresscommand1():
+    progress1.start(100)
 
+button1=Button(window,text="This is a button",command=progresscommand1)
+button1.pack(padx=10,pady=70)
 
 
 
