@@ -33,7 +33,12 @@ view2.add_command(label="Reset out", command=None)
 view.add_separator()
 view.add_checkbutton(label="Status bar", command=None)
 view.add_checkbutton(label="Fullscreen", command=None)
+
+copy=Menu(menubar,tearoff=0)
+menubar.add_cascade(label="Copy", menu=copy)
+
 #display menu
 window.config(menu=menubar)
+
 
 mainloop()
